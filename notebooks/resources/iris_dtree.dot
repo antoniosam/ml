@@ -1,0 +1,20 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Petal.Length <= 2.45\nentropy = 1.581\nsamples = 117\nvalue = [43, 38, 36]"] ;
+1 [label="entropy = 0.0\nsamples = 43\nvalue = [43, 0, 0]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Petal.Length <= 5.05\nentropy = 0.999\nsamples = 74\nvalue = [0, 38, 36]"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="Petal.Width <= 1.65\nentropy = 0.575\nsamples = 44\nvalue = [0, 38, 6]"] ;
+2 -> 3 ;
+4 [label="Petal.Length <= 4.95\nentropy = 0.179\nsamples = 37\nvalue = [0, 36, 1]"] ;
+3 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 36\nvalue = [0, 36, 0]"] ;
+4 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1]"] ;
+4 -> 6 ;
+7 [label="entropy = 0.863\nsamples = 7\nvalue = [0, 2, 5]"] ;
+3 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 30\nvalue = [0, 0, 30]"] ;
+2 -> 8 ;
+}
